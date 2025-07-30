@@ -22,8 +22,7 @@ app.use("/api/v1/tasks", taskRoute);
 // DB Connection
 mongoose
   .connect(process.env.MONGO_DB, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
+   
   })
   .then(() => {
     console.log("DB connected");
