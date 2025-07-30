@@ -8,7 +8,7 @@ const {
   deleteProject,
 } = require("../controllers/projectcontroller");
 
-router.post("/", auth, createProject);
+router.post("/",auth, createProject);
 router.get("/", auth, getProjects);
 router.put("/:id", auth, updateProject);
 router.delete("/:id", auth, deleteProject);
